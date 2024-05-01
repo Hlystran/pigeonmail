@@ -1,0 +1,317 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-purple: #5B197A;
+    --color-lite-gray: #D9D9D9;
+    --color-nav-links: #5C5C5C;
+    --color-lime: #B0D91A;
+}
+
+@font-face {
+    font-family: "Jockey one";
+    src: url(/fonts/JockeyOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Regular.ttf);
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 15px 10vw;
+}
+
+header .nav {
+    display: grid;
+    grid-template-columns: 20px 64px;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+header .kategori {
+    display: grid;
+    grid-template-columns: repeat(3, 9vw);
+    align-items: center;
+    justify-content: center;
+}
+
+header .kategori a {
+    display: grid;
+    justify-content: center;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+header .nav p {
+    font-family: Jockey one;
+    font-size: 24px;
+}
+
+section.forma {
+    background-image: url(/img/аэропорт.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 210px 210px;
+}
+
+section.forma h1 {
+    color: var(--color-white);
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+section.forma .form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 50px;
+}
+
+section.forma .form .formik {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+section.forma .form .formik input {
+    padding: 20px 3vw;
+    border-radius: 10px;
+}
+
+section.forma .form main {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 15px 25px;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 10px;
+}
+
+section.forma .form main footer {
+    display: grid;
+    grid-template-columns: 1fr 8vw;
+}
+
+section.forma .form main footer .kolvo button {
+    padding: 10px 17px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-lite-gray);
+    color: var(--color-black);
+}
+
+section.forma .form main footer .kolvo .left {
+    background-color: var(--color-lite-gray);
+}
+
+section.forma .form main footer .kolvo .right {
+    background-color: var(--color-white);
+}
+
+section.forma .form main footer .kolvo {
+    display: grid;
+    grid-template-columns: repeat(3, 37px);
+    justify-content: end;
+}
+
+section.forma .form main footer .kolvo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.forma .form main footer .opisanie h3 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+section.forma .form main footer .opisanie p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--color-nav-links);
+}
+
+section.forma a {
+    text-decoration: none;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 20px 9.4vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+section.forma footer {
+    display: flex;
+    justify-content: center;
+}
+
+section.bilet {
+    padding: 50px 210px 120px 210px;
+}
+
+section.bilet h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+section.bilet hr {
+    height: 3px;
+    border: 2px solid var(--color-purple);
+}
+
+section.bilet main {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+section.bilet main footer {
+    display: grid;
+    row-gap: 30px;
+}
+
+section.bilet main footer .avia {
+    background-color: var(--color-purple);
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 180px 1fr;
+}
+
+section.bilet main footer .avia .left {
+    display: grid;
+    row-gap: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section.bilet main footer .avia .left .ikonka {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+section.bilet main footer .avia .left .ikonka img {
+    border-radius: 10px;
+}
+
+section.bilet main footer .avia .left .bagaj {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: center;
+}
+
+section.bilet main footer .avia .left .vubrat {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: grid;
+    justify-content: center;
+}
+
+section.bilet main footer .avia .left .vubrat a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+  }
+  
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-lite-gray);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.6px;
+    background-color: var(--color-white);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--color-lime);
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-lime);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(17px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}

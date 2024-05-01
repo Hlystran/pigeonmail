@@ -1,0 +1,363 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-purple: #5B197A;
+    --color-lite-gray: #D9D9D9;
+    --color-nav-links: #5C5C5C;
+}
+
+@font-face {
+    font-family: "Jockey one";
+    src: url(/fonts/JockeyOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Regular.ttf);
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 15px 10vw;
+}
+
+header .nav {
+    display: grid;
+    grid-template-columns: 20px 64px;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+header .kategori {
+    display: grid;
+    grid-template-columns: repeat(3, 9vw);
+    align-items: center;
+    justify-content: center;
+}
+
+header .kategori a {
+    display: grid;
+    justify-content: center;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+header .nav p {
+    font-family: Jockey one;
+    font-size: 24px;
+}
+
+section.forma {
+    background-image: url(/img/аэропорт.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 210px 210px;
+}
+
+section.forma h1 {
+    color: var(--color-white);
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+section.forma .form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 50px;
+}
+
+section.forma .form .formik {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+section.forma .form .formik input {
+    padding: 20px 3vw;
+    border-radius: 10px;
+}
+
+section.forma .form main {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 15px 25px;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 10px;
+}
+
+section.forma .form main footer {
+    display: grid;
+    grid-template-columns: 1fr 8vw;
+}
+
+section.forma .form main footer .kolvo button {
+    padding: 10px 17px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-lite-gray);
+    color: var(--color-black);
+}
+
+section.forma .form main footer .kolvo .left {
+    background-color: var(--color-lite-gray);
+}
+
+section.forma .form main footer .kolvo .right {
+    background-color: var(--color-white);
+}
+
+section.forma .form main footer .kolvo {
+    display: grid;
+    grid-template-columns: repeat(3, 37px);
+    justify-content: end;
+}
+
+section.forma .form main footer .kolvo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.forma .form main footer .opisanie h3 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+section.forma .form main footer .opisanie p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--color-nav-links);
+}
+
+section.forma a {
+    text-decoration: none;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 20px 8vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+section.forma footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+section.opic {
+    padding: 170px 150px;
+}
+
+section.opic h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    font-size: 36px;
+    padding-bottom: 60px;
+}
+
+section.opic footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.opic footer .lol {
+    padding-top: 100px;
+}
+
+section.opic footer div span {
+    font-family: Montserrat;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+section.opic footer div p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+section.opic footer div {
+    padding: 30px;
+}
+
+section.cebe {
+    padding: 60px 210px 0px 210px;
+    background-color: var(--color-purple);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+section.cebe footer {
+    color: var(--color-white)
+}
+
+section.cebe h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+section.cebe div {
+    display: grid;
+    justify-content: end;
+}
+
+section.cebe footer p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+
+section.cebe footer p span {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+section.otzuv {
+    padding: 130px 210px 70px 210px;
+}
+
+section.otzuv h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+section.otzuv footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+section.otzuv footer div {
+    background-color: var(--color-purple);
+    border-radius: 20px;
+    color: var(--color-white);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+section.otzuv footer div img {
+    border-radius: 20px;
+}
+
+section.otzuv footer div h2 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+section.otzuv footer div p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+section.podval {
+    background-color: var(--color-purple);
+    padding: 25px 210px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    color: var(--color-white);
+    align-items: center;
+    row-gap: 10px;
+}
+
+section.podval .prava {
+    display: grid;
+    grid-template-columns: 20px 250px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+section.podval .center {
+    display: grid;
+    justify-content: center;
+}
+
+section.podval .cotseti {
+    display: grid;
+    justify-content: end;
+    display: grid;
+    grid-template-columns: 30px 35px 35px;
+    column-gap: 5px;
+    align-items: center;
+}
+
+section.podval .right {
+    display: grid;
+    justify-content: end;
+}
+
+section.podval h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section.podval p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
