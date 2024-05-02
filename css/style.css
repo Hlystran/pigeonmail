@@ -8,25 +8,25 @@
 
 @font-face {
     font-family: "Jockey one";
-    src: url(/fonts/JockeyOne-Regular.ttf);
+    src: url(../fonts/JockeyOne-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/fonts/Montserrat-SemiBold.ttf);
+    src: url(../fonts/Montserrat-SemiBold.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/fonts/Montserrat-Bold.ttf);
+    src: url(../fonts/Montserrat-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/fonts/Montserrat-Regular.ttf);
+    src: url(../fonts/Montserrat-Regular.ttf);
     font-weight: 900;
 }
 
@@ -73,7 +73,7 @@ header .nav p {
 }
 
 section.forma {
-    background-image: url(/img/аэропорт.png);
+    background-image: url(../img/аэропорт.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 210px 210px;
