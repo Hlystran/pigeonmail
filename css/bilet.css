@@ -221,6 +221,7 @@ section.bilet main footer .avia {
     color: var(--color-white);
     display: grid;
     grid-template-columns: 180px 1fr;
+    column-gap: 30px;
 }
 
 section.bilet main footer .avia .left {
@@ -314,4 +315,155 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+.air {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 5px;
+}
+
+.air svg {
+    display: grid;
+    align-items: center;
+}
+
+.plane {
+    display: grid;
+    justify-content: end;
+}
+
+.text1 {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+
+.text1 p {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 16;
+}
+
+div.linia {
+    display: grid;
+    grid-template-columns: 3px 1fr 7px;
+    align-items: center;
+}
+
+div.linia hr {
+    border: 1px solid var(--color-white);
+    height: 1px;
+}
+
+article.time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 5px;
+}
+
+article.time div.text3 {
+    display: grid;
+    justify-content: center;
+}
+
+
+article.time div.text4 {
+    display: grid;
+    justify-content: end;
+    font-size: 16;
+}
+
+article.time div p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+article.time div p span{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+article.data {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+article.data span {
+    font-size: 18px;
+}
+
+div.end {
+    display: grid;
+    justify-content: end;
+}
+
+article.city {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+article.data div {
+    padding-top: 5px;
+}
+
+article.city div {
+    padding-top: 5px;
+}
+
+
+section.podval {
+    background-color: var(--color-purple);
+    padding: 25px 210px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    color: var(--color-white);
+    align-items: center;
+    row-gap: 10px;
+}
+
+section.podval .prava {
+    display: grid;
+    grid-template-columns: 20px 250px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+section.podval .center {
+    display: grid;
+    justify-content: center;
+}
+
+section.podval .cotseti {
+    display: grid;
+    justify-content: end;
+    display: grid;
+    grid-template-columns: 30px 35px 35px;
+    column-gap: 5px;
+    align-items: center;
+}
+
+section.podval .right {
+    display: grid;
+    justify-content: end;
+}
+
+section.podval h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section.podval p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
 }
