@@ -1,0 +1,442 @@
+::placeholder {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-purple: #5B197A;
+    --color-lite-gray: #D9D9D9;
+    --color-nav-links: #5C5C5C;
+    --color-lime: #B0D91A;
+}
+
+@font-face {
+    font-family: "Jockey one";
+    src: url(../fonts/JockeyOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 15px 10vw;
+}
+
+header .nav {
+    display: grid;
+    grid-template-columns: 20px 64px;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+header .kategori {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    align-items: center;
+    justify-content: center;
+}
+
+header .kategori a {
+    display: grid;
+    justify-content: center;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+header .nav p {
+    font-family: Jockey one;
+    font-size: 24px;
+}
+
+section.purchase {
+    padding: 60px 8vw;
+    background-image: url(../img/аэропорт.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.purchase footer {
+    background-color: var(--color-purple);
+    border-radius: 10px;
+    padding: 30px 60px;
+}
+
+section.purchase footer .up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+section.purchase footer .up div>.ball {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section.purchase footer .up h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color-white);
+    display: grid;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+section.purchase footer .up main {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+section.purchase footer .up main .right1 {
+    justify-content: end;
+    display: grid;
+}
+
+section.purchase footer .up main h2 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section.purchase footer .up main p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+section.purchase footer .up .linia {
+    display: grid;
+    grid-template-columns: 1fr 230px 1fr;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+section.purchase footer .up .linia p {
+    display: grid;
+    grid-template-columns: 190px 1fr 20px;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+section.purchase footer .up .linia hr {
+    height: 1px;
+    border: 1px solid var(--color-black);
+}
+
+section.purchase footer .up input {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 26px 20px;
+    display: grid;
+    width: 100%;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
+section.purchase footer .up .linia1 {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+section.purchase footer .up .linia1 p {
+    display: grid;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section.purchase footer .up .linia1 hr {
+    height: 1px;
+    border: 1px solid var(--color-black);
+}
+
+section.purchase footer .up .ball1 main {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 15px 20px;
+
+}
+
+section.purchase footer .up .ball1 {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+section.purchase footer .up .ball1 .bagaj {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 26px 20px;
+    display: grid;
+    width: 100%;
+}
+
+section.purchase footer .up .ball1 .bagaj p {
+    display: grid;
+    justify-content: center;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
+section.purchase footer .down {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+
+section.purchase footer .down .left1 h1 {
+    padding-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    display: grid;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+section.purchase footer .down .left1 main {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+}
+
+section.purchase footer .down .left1 main .two {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+
+
+section.purchase footer .down .left1 main .two>.three input{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+    display: grid;
+    justify-content: center;
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+}
+
+
+section.purchase footer .down .left1 main .one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    padding-bottom: 20px;
+}
+
+section.purchase footer .down .left1 main .one>div{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+    display: grid;
+    justify-content: center;
+}
+
+
+
+section.purchase footer .down .left1 main .three {
+    display: grid;
+    grid-template-columns: 45% 48%;
+    column-gap: 30px;
+}
+
+section.purchase footer .down .right1 {
+    padding-top: 60px;
+    row-gap: 30px;
+    display: grid;
+}
+
+section.purchase footer .down .right1 .opis {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section.purchase footer .down .right1 .opis p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section.purchase footer .down .right1 a {
+    padding: 27px 102px;
+    background-color: var(--color-lime);
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    justify-content: center;
+    display: grid;
+    color: var(--color-white);
+    align-items: center;
+}
+
+section.purchase footer .down .left1 main .two ul {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 10px 15px;
+    row-gap: 6px;
+    display: grid;
+}
+
+
+section.purchase footer .down .left1 main .two ul li p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+section.purchase footer .down .left1 main .two ul li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+section.purchase footer .down .left1 main .one input {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 26px 20px;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
+section.purchase footer .down .left1 main .one div {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 26px 20px;
+    display: grid;
+    width: 100%;
+}
+
+section.purchase footer .down .left1 main .three div {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 26px 20px;
+    display: grid;
+    width: 100%; 
+}
+
+.lojka {
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+    display: grid;
+    justify-content: center;
+}
+
+
+section.purchase footer .down .left1 main .two>input {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    padding: 26px 20px;
+}
+
+
+section.podval {
+    background-color: var(--color-purple);
+    padding: 25px 210px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    color: var(--color-white);
+    align-items: center;
+    row-gap: 10px;
+}
+
+section.podval .prava {
+    display: grid;
+    grid-template-columns: 20px 250px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+section.podval .center {
+    display: grid;
+    justify-content: center;
+}
+
+section.podval .cotseti {
+    display: grid;
+    justify-content: end;
+    display: grid;
+    grid-template-columns: 30px 35px 35px;
+    column-gap: 5px;
+    align-items: center;
+}
+
+section.podval .right {
+    display: grid;
+    justify-content: end;
+}
+
+section.podval h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section.podval p {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+/* @media screen and (max-width: 1000px){
+    section.purchase footer .up{
+       grid-template-columns: none; 
+    }
+
+ } */

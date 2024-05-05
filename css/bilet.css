@@ -1,3 +1,11 @@
+::placeholder {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
 :root {
     --color-white: #fff;
     --color-black: #000;
@@ -55,7 +63,7 @@ header .nav {
 
 header .kategori {
     display: grid;
-    grid-template-columns: repeat(3, 9vw);
+    grid-template-columns: repeat(3, 10vw);
     align-items: center;
     justify-content: center;
 }
@@ -107,6 +115,8 @@ section.forma .form .formik {
 section.forma .form .formik input {
     padding: 20px 3vw;
     border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 900;
 }
 
 section.forma .form main {
