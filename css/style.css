@@ -120,7 +120,7 @@ section.forma .form .formik input {
     font-weight: 900;
 }
 
-section.forma .form main {
+section.forma .form .main {
     background-color: var(--color-white);
     color: var(--color-black);
     padding: 15px 25px;
@@ -129,12 +129,12 @@ section.forma .form main {
     border-radius: 10px;
 }
 
-section.forma .form main footer {
+section.forma .form .main footer {
     display: grid;
     grid-template-columns: 1fr 8vw;
 }
 
-section.forma .form main footer .kolvo button {
+section.forma .form .main footer .kolvo button {
     padding: 10px 17px;
     border-radius: 10px;
     display: flex;
@@ -144,33 +144,33 @@ section.forma .form main footer .kolvo button {
     color: var(--color-black);
 }
 
-section.forma .form main footer .kolvo .left {
+section.forma .form .main footer .kolvo .left {
     background-color: var(--color-lite-gray);
 }
 
-section.forma .form main footer .kolvo .right {
+section.forma .form .main footer .kolvo .right {
     background-color: var(--color-white);
 }
 
-section.forma .form main footer .kolvo {
+section.forma .form .main footer .kolvo {
     display: grid;
     grid-template-columns: repeat(3, 37px);
     justify-content: end;
 }
 
-section.forma .form main footer .kolvo p {
+section.forma .form .main footer .kolvo p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.forma .form main footer .opisanie h3 {
+section.forma .form .main footer .opisanie h3 {
     font-family: Montserrat;
     font-weight: 900;
     font-size: 16px;
 }
 
-section.forma .form main footer .opisanie p {
+section.forma .form .main footer .opisanie p {
     font-family: Montserrat;
     font-weight: 900;
     font-size: 12px;
@@ -207,6 +207,7 @@ section.opic h1 {
     justify-content: center;
     font-size: 36px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 section.opic footer {
@@ -216,6 +217,10 @@ section.opic footer {
 
 section.opic footer .lol {
     padding-top: 100px;
+}
+
+section.opic footer img {
+    width: 100%;
 }
 
 section.opic footer div span {
@@ -244,6 +249,7 @@ section.cebe {
     background-color: var(--color-purple);
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
 }
 
 section.cebe footer {
@@ -257,11 +263,13 @@ section.cebe h1 {
     display: grid;
     justify-content: center;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 section.cebe div {
     display: grid;
     justify-content: end;
+    align-items: end;
 }
 
 section.cebe footer p {
@@ -328,7 +336,7 @@ section.otzuv footer div p {
 
 section.podval {
     background-color: var(--color-purple);
-    padding: 25px 210px;
+    padding: 25px 10vw;
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     color: var(--color-white);
@@ -372,4 +380,68 @@ section.podval p {
     font-family: Montserrat;
     font-weight: 900;
     font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    header .kategori {
+        grid-template-columns: repeat(3, 33%)
+    }
+
+    section.forma {
+        padding: 100px 60px;
+    }
+
+    section.forma h1 {
+        font-size: 24px;
+    }
+
+    section.forma .form {
+        grid-template-columns: none;
+        row-gap: 20px;
+    }
+
+    section.opic {
+        padding: 60px;
+    }
+
+    section.opic h1 {
+        font-size: 24px;
+    }
+
+    section.opic footer .lol{
+        padding-top: 0;
+    }
+
+    section.opic footer div p {
+        font-size: 14px;
+    }
+
+    section.cebe {
+        padding: 30px 60px 0px 60px;
+    }
+
+    section.cebe h1 {
+        font-size: 24px;
+    }
+
+    section.cebe div p {
+        font-size: 14px;
+    }
+
+    section.otzuv {
+        padding: 30px 60px 75px 60px;
+    }
+
+    section.otzuv h1 {
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+
+    section.otzuv footer {
+        grid-template-columns: none;
+    }
 }

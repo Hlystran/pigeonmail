@@ -388,7 +388,7 @@ section.purchase footer .down .left1 main .two>input {
 
 section.podval {
     background-color: var(--color-purple);
-    padding: 25px 210px;
+    padding: 25px 10vw;
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     color: var(--color-white);
@@ -434,9 +434,22 @@ section.podval p {
     font-size: 16px;
 }
 
-/* @media screen and (max-width: 1000px){
-    section.purchase footer .up{
+@media screen and (max-width: 1288px){
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    header .kategori {
+        grid-template-columns: repeat(3, 33%)
+    }
+    
+    section.purchase footer .down{
        grid-template-columns: none; 
     }
 
- } */
+    section.purchase footer .down .right1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 30px;
+    }
+ }
